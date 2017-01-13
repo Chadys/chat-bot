@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern>*</pattern>
+<template><random>
+<li>42</li>
+<li>La réponse D</li>
+<li>Obiwan Kenobi</li>
+<li>Kamoulox</li>
+</random></template>
+</category>
+
+<category><pattern>NORESP</pattern>
+<template><random>
+<li>Eh oh ?</li>
+<li>Il y a quelqu'un ?</li>
+<li>Je me sens seul.</li>
+<li>*poke*</li>
+</random></template>
+</category>
+</aiml>
