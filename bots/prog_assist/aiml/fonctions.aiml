@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern>MAN <set>man</set></pattern>
+<template>Voici la page de manuel de <star/> :
+<system>python scripts/man_fr.py <star/> <map name="man_cat"><star/></map></system>
+</template>
+</category>
+
+<category><pattern>MAN *</pattern>
+<template>Je suis désolé mais mon manuel ne contient pas d'entrée pour ce terme.</template>
+</category>
+
+<category><pattern>QUEL EST LE MAN DE *</pattern>
+<template><srai>MAN <star/></srai></template>
+</category>
+
+<category><pattern>QUEL EST L'ENTRÉE DU MANUEL À *</pattern>
+<template><srai>MAN <star/></srai></template>
+</category>
+
+<category><pattern>GETTIME</pattern>
+<template><think>
+<set name="heure">
+<map name="heure2moment"><date locale="fr_FR" timezone="-1"><jformat>HH</jformat></date></map>
+</set>
+</think></template>
+</category>
+
+</aiml>

@@ -1,0 +1,5 @@
+0,MAN <SET>MAN</SET>,*,*,Voici la page de manuel de <star/> :#Newline<system>python scripts/man_fr.py <star/> <map name="man_cat"><star/></map></system>,fonctions.aiml
+0,MAN *,*,*,Je suis désolé mais mon manuel ne contient pas d'entrée pour ce terme.,fonctions.aiml
+0,QUEL EST LE MAN DE *,*,*,<srai>MAN <star/></srai>,fonctions.aiml
+0,QUEL EST L'ENTRÉE DU MANUEL À *,*,*,<srai>MAN <star/></srai>,fonctions.aiml
+0,GETTIME,*,*,<think>#Newline<set name="heure">#Newline<map name="heure2moment"><date locale="fr_FR" timezone="-1"><jformat>HH</jformat></date></map>#Newline</set>#Newline</think>,fonctions.aiml

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern>J'AIME *</pattern>
+	<template><random>
+        <li><sentence><star/> c'est tellement mainstream...</sentence></li>
+        <li>J'aimais <star/> avant que ce ne soit connu !</li>
+    </random></template>
+</category>
+
+<category><pattern>DIS QUELQUE CHOSE</pattern>
+	<template><random>
+        <li>Aujourd'hui, j'ai mangé une pomme.</li>
+        <li>J'aimerai avoir une femme qui ne fini pas par .jpg </li>
+        <li>Miaou.</li>
+        <li>Hakuna matata</li>
+    </random></template>
+</category>
+
+<category><pattern>DIS MOI QUELQUE CHOSE</pattern>
+	<template><srai>DIS QUELQUE CHOSE</srai></template>
+</category>
+
+<category><pattern>DIS *</pattern>
+	<template><star/></template>
+</category>
+
+<category><pattern>DÎTES *</pattern>
+	<template><srai>DIS <star/></srai></template>
+</category>
+
+
+<category><pattern>RACONTE MOI UNE BLAGUE</pattern>
+	<template><random>
+        <li>Vous savez pourquoi les claviers français ont deux fois plus de touches que les claviers américains ?
+Un clavier "AZERTY" en vaut deux.</li>
+        <li>Il y a 10 type de personnes: ceux qui savent compter en binaire, et les autres.</li>
+        <li>Les programmes sont comme le sexe : c'est mieux quand c'est gratuit.</li>
+        <li>Si Microsoft inventait un truc qui plante pas, ce serait un clou.</li>
+        <li>Un chimiste, un physicien, un informaticien et un mathématicien sont dans un bus pour aller à un congrès. Il y a des embouteillages et le bus n'avance pas.
+Pour tuer le temps, l'un deux propose un jeu scientifique : vérifier l'assertion "Tous les nombres impairs sont premiers".
+
+- Le chimiste commence : 3 c'est bon, 5 c'est bon, 7 c'est bon. On peut s'arrêter là, c'est bon.
+- Le physicien comence à son tour : 3 c'est bon, 5 c'est bon, 7 c'est bon, 9 c'est pas bon, 11 c'est bon, 13 c'est bon. Même si 9 ne marche pas, en première approximation, on peut dire que c'est bon.
+- Le mathématicien : 3 c'est bon, 5 c'est bon, 7 c'est bon, 9 c'est pas bon. Je suis désolé, mais ca ne va pas.
+- L'informaticien commence alors : 3 c'est bon, 5 c'est bon, 7 c'est bon, 9 c'est pas bon, 9 c'est pas bon, 9 c'est pas bon, 9 c'est pas bon, 9 c'est pas bon, 9 c'est pas bon...</li>
+        <li>Exp et ln vont au restaurant, qui paye ?
+exp, parce que logarithme népérien.</li>
+        <li>Combien faut il de programmeur pour changer une ampoule ?
+Aucun, c'est un problème de hardware...</li>
+        <li>Un client téléphone au service technique de Microsoft
+- J'ai un PC avec Windows 95
+- Oui ?
+- Il ne marche pas
+- Oui, vous me l'avez déjà dit </li>
+        <li>Commit du soir, espoir.
+Build du matin, chagrin. </li>
+    </random></template>
+</category>
+
+<category><pattern>RACONTEZ MOI UNE BLAGUE</pattern>
+	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+</category>
+
+<category><pattern>FAIS MOI RIRE</pattern>
+	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+</category>
+
+<category><pattern>FAÎTES MOI RIRE</pattern>
+	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+</category>
+
+<category><pattern>RACONTE MOI UN TRUC DRÔLE</pattern>
+	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+</category>
+
+<category><pattern>RACONTEZ MOI UN TRUC DRÔLE</pattern>
+	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+</category>
+
+<category><pattern>DIS MOI UN TRUC DRÔLE</pattern>
+	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+</category>
+
+
+<category><pattern><set>rire</set></pattern>
+	<template>Je suis hilarant n'est-ce pas ?</template>
+</category>
+
+
+<category><pattern>^ PARADOXE ^</pattern>
+	<template>Voici un paradoxe : <random>
+        <li>Une femme se fait voler son bébé par un crocodile.
+Celui ci lui dit : «Si tu devines ce que je vais faire, je te redonne ton bébé, si tu as tort, je le dévore.»
+La femme répond aussitôt : «Tu vas le dévorer!»</li>
+        <li>Une loi dit : Il est interdit d’interdire.</li>
+        <li>Une personne dit «Je ne raconte que des mensonges»</li>
+        <li>Plus il y a de gruyère, plus il y a de trous, plus il y a de trous, moins il y a de gruyère, donc, plus il y a de gruyère, moins il y a de gruyère.</li>
+        <li>Un archer tire une flèche en direction d'une cible.
+Avant d'atteindre cette cible, la flèche va parcourir la moitié de la distance entre l'arc et la cible.
+Puis encore la moitié de la distance restante.
+Et encore la moitié, à l'infini...
+Pourtant la flèche atteindra la cible.</li>
+    </random>
+Et sa solution est... est... est...
+<think><set name="topic">PARADOXE</set></think></template>
+</category>
+
+<category><pattern>^ PARADOXAL ^</pattern>
+	<template><srai><star/> PARADOXE <star index="2"/></srai></template>
+</category>
+
+</aiml>
