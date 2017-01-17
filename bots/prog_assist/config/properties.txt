@@ -1,7 +1,7 @@
 url:https://github.com/Chadys
-name:ASSISTANT-PROGRAMMATION-POUR-LES-N00BZ
+name:ASSISTANT-DE-PROGRAMMATION-POUR-LES-N00BZ
 email:jrymer@etud.univ-paris8.fr
-gender:female
+gender:male
 botmaster:Julie Rymer
 organization:BDE Segfault
 version:0.0.4

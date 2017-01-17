@@ -1,6 +1,3 @@
 0,*,*,*,<random>#Newline<li>42</li>#Newline<li>La réponse D</li>#Newline<li>Obiwan Kenobi</li>#Newline<li>Kamoulox</li>#Newline</random>,generalities.aiml
-0,NORESP,*,*,<random>#Newline<li>Eh oh ?</li>#Newline<li>Il y a quelqu'un ?</li>#Newline<li>Je me sens seul.</li>#Newline<li>*poke*</li>#Newline</random>,generalities.aiml
-0,^ BONJOUR ^,*,*,Yo.,generalities.aiml
-0,MAN <SET>MAN</SET>,*,*,<system>python scripts/man_fr.py <star/> <map name="man_cat"><star/></map></system>,generalities.aiml
-0,MAN *,*,*,Je suis désolé mais mon manuel ne contient pas d'entrée pour ce terme.,generalities.aiml
-0,ÉHOH,*,*,Je suis désolé mais mon manuel ne contient pas d'entrée pour ce terme.,generalities.aiml
+0,NORESP,*,*,<random>#Newline<li>Eh oh o_O ?</li>#Newline<li>Il y a quelqu'un ?</li>#Newline<li>Je me sens seul. &gt;&lt;</li>#Newline<li>*poke*</li>#Newline</random>,generalities.aiml
+0,#,*,PARADOXE,est... est... est... est... est... est... est... est... est...,generalities.aiml

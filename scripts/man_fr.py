@@ -11,8 +11,9 @@ def clean_spaces(matchobject):
 	clean = re.sub(r'\s{2,}', ' ', matchobject.group(1))
 	return re.sub(r'^\s*', '\n\t', clean)
 
+command = sys.argv[1].lower()
 try: # http://www.linux-france.org/article/man-fr/
-	page =  BeautifulSoup(urllib2.urlopen('http://www.linux-france.org/article/man-fr/man'+sys.argv[2]+'/'+sys.argv[1]+'-'+sys.argv[2]+'.html'), "html.parser")
+	page =  BeautifulSoup(urllib2.urlopen('http://www.linux-france.org/article/man-fr/man'+sys.argv[2]+'/'+command+'-'+sys.argv[2]+'.html'), "html.parser")
 	text = page.body.get_text()
 	text = re.sub(r"(?s)^.*?(?=NOM)",'',text)
 	text = re.sub(r"""(?xu)\s+?\n .+? [ \t]+
@@ -22,13 +23,18 @@ try: # http://www.linux-france.org/article/man-fr/
 
 except urllib2.HTTPError:
 	try: # http://www.man-linux-magique.net/
-		page =  BeautifulSoup(urllib2.urlopen('http://www.man-linux-magique.net/man'+sys.argv[2]+'/'+sys.argv[1]+'.html'), "html.parser")
+		page =  BeautifulSoup(urllib2.urlopen('http://www.man-linux-magique.net/man'+sys.argv[2]+'/'+command+'.html'), "html.parser")
 		text = page.find(id="texte-man").get_text()
 		text = re.sub(r"\n+$",'',text)
 	
 	except urllib2.HTTPError:
 		try: # http://jp.barralis.com/linux-man/
-			page =  BeautifulSoup(urllib2.urlopen('http://jp.barralis.com/linux-man/man'+sys.argv[2]+'/'+sys.argv[1]+'.'+sys.argv[2]+'.php'), "html.parser")
+			# étape intermédiaire nécessaire car ce site ne déclenche pas HTTPError 404
+			request = urllib2.urlopen('http://jp.barralis.com/linux-man/man'+sys.argv[2]+'/'+command+'.'+sys.argv[2]+'.php')
+			url = request.geturl(
+)			if url == 'http://jp.barralis.com/linux-man/404man.php':
+				raise urllib2.HTTPError(url, 404, "Ce man n'existe pas...", request.info(), None)
+			page =  BeautifulSoup(request, "html.parser")
 			text = page.body.get_text()
 			text = re.sub(r"""(?xs)^.*?(?=NOM) |
 				\n+<!--.* | #commentaires et scripts de fin
@@ -47,7 +53,7 @@ except urllib2.HTTPError:
 			
 			# regrouper synopsis/syntaxe
 			m = re.search(r'(?u)NOM\s*(\w+)', text)
-			name = m.group(1) if m is not None else sys.argv[1]
+			name = m.group(1) if m is not None else command
 			text = re.sub(r"""(?x)(\t\[\n
 				(?: [^\[]*? (?:\[ [^\[]*? \])*)*?
 				\])""", clean_spaces, text)
@@ -59,4 +65,4 @@ except urllib2.HTTPError:
 			print u"Défaillance du système, je n'ai pas pu consulter le manuel".encode('utf-8')
 			quit()
 
-print (sys.argv[1]+'('+sys.argv[2]+')\n\n'+text).encode('utf-8')
+print (command+'('+sys.argv[2]+')\n\n'+text).encode('utf-8')

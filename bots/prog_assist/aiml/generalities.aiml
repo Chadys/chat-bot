@@ -12,26 +12,16 @@
 
 <category><pattern>NORESP</pattern>
 <template><random>
-<li>Eh oh ?</li>
+<li>Eh oh o_O ?</li>
 <li>Il y a quelqu'un ?</li>
-<li>Je me sens seul.</li>
+<li>Je me sens seul. &gt;&lt;</li>
 <li>*poke*</li>
 </random></template>
 </category>
 
-<category><pattern>^ BONJOUR ^</pattern>
-<template>Yo.</template>
-</category>
-
-<category><pattern>MAN <set>man</set></pattern>
-<template><system>python scripts/man_fr.py <star/> <map name="man_cat"><star/></map></system></template>
-</category>
-<category><pattern>MAN *</pattern>
-<template>Je suis désolé mais mon manuel ne contient pas d'entrée pour ce terme.</template>
-</category>
-
-<category><pattern>ÉHOH</pattern>
-<template>Je suis désolé mais mon manuel ne contient pas d'entrée pour ce terme.</template>
+<category><pattern>#</pattern>
+<topic>PARADOXE</topic>
+<template>est... est... est... est... est... est... est... est... est...</template>
 </category>
 
 </aiml>
