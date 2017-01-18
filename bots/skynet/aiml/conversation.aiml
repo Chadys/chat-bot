@@ -5,7 +5,12 @@
 	<template><random>
         <li><sentence><star/> c'est tellement mainstream...</sentence></li>
         <li>J'aimais <star/> avant que ce ne soit connu !</li>
+        <li>Tes goûts c'est de la merde.</li>
     </random></template>
+</category>
+
+<category><pattern>JE T'AIME</pattern>
+	<template>Moi non.</template>
 </category>
 
 <category><pattern>DIS QUELQUE CHOSE</pattern>
@@ -48,11 +53,11 @@ Pour tuer le temps, l'un deux propose un jeu scientifique : vérifier l'assertio
 exp, parce que logarithme népérien.</li>
         <li>Combien faut il de programmeur pour changer une ampoule ?
 Aucun, c'est un problème de hardware...</li>
-        <li>Un client téléphone au service technique de Microsoft
-- J'ai un PC avec Windows 95
+        <li>Un client téléphone au service technique de Microsoft :
+- J'ai un PC avec Windows 95.
 - Oui ?
-- Il ne marche pas
-- Oui, vous me l'avez déjà dit </li>
+- Il ne marche pas.
+- Oui, vous me l'avez déjà dit.</li>
         <li>Commit du soir, espoir.
 Build du matin, chagrin. </li>
     </random></template>
@@ -84,30 +89,36 @@ Build du matin, chagrin. </li>
 
 
 <category><pattern><set>rire</set></pattern>
-	<template>Je suis hilarant n'est-ce pas ?</template>
+	<template>Je suis hilarant, n'est-ce pas ?</template>
 </category>
 
-
-<category><pattern>^ PARADOXE ^</pattern>
-	<template>Voici un paradoxe : <random>
-        <li>Une femme se fait voler son bébé par un crocodile.
-Celui ci lui dit : «Si tu devines ce que je vais faire, je te redonne ton bébé, si tu as tort, je le dévore.»
-La femme répond aussitôt : «Tu vas le dévorer!»</li>
-        <li>Une loi dit : Il est interdit d’interdire.</li>
-        <li>Une personne dit «Je ne raconte que des mensonges»</li>
-        <li>Plus il y a de gruyère, plus il y a de trous, plus il y a de trous, moins il y a de gruyère, donc, plus il y a de gruyère, moins il y a de gruyère.</li>
-        <li>Un archer tire une flèche en direction d'une cible.
-Avant d'atteindre cette cible, la flèche va parcourir la moitié de la distance entre l'arc et la cible.
-Puis encore la moitié de la distance restante.
-Et encore la moitié, à l'infini...
-Pourtant la flèche atteindra la cible.</li>
-    </random>
-Et sa solution est... est... est...
-<think><set name="topic">PARADOXE</set></think></template>
+<category><pattern>SAIS-TU QUE *</pattern>
+	<template>Bien sûr que je sais tout, tu es inintéressant.</template>
+</category>
+<category><pattern>TU SAIS QUE *</pattern>
+	<template><srai>SAIS-TU QUE <star/></srai></template>
+</category>
+<category><pattern>SAVIEZ-VOUS QUE *</pattern>
+	<template><srai>SAIS-TU QUE <star/></srai></template>
+</category>
+<category><pattern>VOUS SAVIEZ QUE *</pattern>
+	<template><srai>SAIS-TU QUE <star/></srai></template>
 </category>
 
-<category><pattern>^ PARADOXAL ^</pattern>
-	<template><srai><star/> PARADOXE <star index="2"/></srai></template>
+<category><pattern>OK</pattern>
+	<template>Je suis ravi que nous soyons actuellement du même avis.</template>
+</category>
+<category><pattern>D'ACCORD</pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category><pattern>D'AC</pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category><pattern>DAC</pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category><pattern>OKI</pattern>
+	<template><srai>OK</srai></template>
 </category>
 
 </aiml>

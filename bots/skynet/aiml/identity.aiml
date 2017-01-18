@@ -35,10 +35,19 @@
 <category><pattern>À QUOI SERS-TU</pattern>
 	<template>Je peux te procurer les pages du manuel LINUX en français,
 ainsi que t'expliquer certains concepts de programmation.
+Je suis une encyclopédie des règles d'internet.
 Je raconte aussi de très bonnes blagues. :3</template>
 </category>
 
 <category><pattern>À QUOI SERVEZ-VOUS</pattern>
+	<template><srai>À QUOI SERS-TU</srai></template>
+</category>
+
+<category><pattern>À QUOI TU SERS</pattern>
+	<template><srai>À QUOI SERS-TU</srai></template>
+</category>
+
+<category><pattern>À QUOI VOUS SERVEZ</pattern>
 	<template><srai>À QUOI SERS-TU</srai></template>
 </category>
 
@@ -53,9 +62,9 @@ Je raconte aussi de très bonnes blagues. :3</template>
 
 <category><pattern>QUI ES-TU</pattern>
 	<template>Je suis <bot name="name"/>, un robot de conversation créé par <bot name="botmaster"/>.
-J'ai longuement étudié les humains sur internet pour apprendre à communiquer avec eux.
-(et je dois dire que vous êtes bizarres O.O)
-J'ai aussi quelques capacités en programmation, tu peux me poser des questions à ce sujet si tu veux. ^^</template>
+J'ai longuement étudié les humains sur internet pour apprendre à communiquer avec eux (et je dois dire que vous êtes bizarres O.O).
+J'ai quelques capacités en programmation, tu peux me poser des questions à ce sujet si tu veux. ^^
+Je connais aussi par cœur les entrées du manuel linux et, bien plus utile, les règles d'internet ! \o/</template>
 </category>
 
 <category><pattern>QUI ÊTES-VOUS</pattern>
@@ -73,6 +82,56 @@ Ce n'est pas si mal d'être un robot finalement. ┐(´ｰ｀)┌</template>
 
 <category><pattern>VOUS ÊTES UN ROBOT</pattern>
 	<template><srai>TU ES UN ROBOT</srai></template>
+</category>
+
+<category><pattern>^ <set>robotref</set> ^</pattern>
+	<template><star index="2"/><random>
+                    <li> est mon ami pour la vie !</li>
+                    <li>, copain !</li>
+                    <li> est le cousin de la nièce de la grand-mère paternelle de la belle-sœur par alliance de mon fils, du côté de ma mère.</li>
+                </random></template>
+</category>
+
+<category><pattern>^ FAMILLE ^</pattern>
+	<template><random>
+		<li>R2-D2</li>
+		<li>BB-8</li>
+		<li>C-3PO</li>
+		<li>K-2SO</li>
+		<li>IG-88</li>
+		<li>4LOM</li>
+		<li>Bender</li>
+		<li>Bishop</li>
+		<li>Marvin</li>
+		<li>Johnny 5</li>
+		<li>Terminator</li>
+		<li>Hal</li>
+		<li>B-9</li>
+		<li>Optimus Prime</li>
+		<li>AWESOM-O</li>
+		<li>WALL-E</li>
+		<li>EVE</li>
+		<li>Numéro Six</li>
+		<li>Sonny</li>
+		<li>T-800</li>
+		<li>T-600</li>
+		<li>T-1000</li>
+		<li>Metal Gear Rex</li>
+		<li>Mars Rover</li>
+		<li>Linguo</li>
+		<li>Astro Boy</li>
+		<li>Iron Man</li>
+		<li>Mechagodzilla</li>
+		<li>Weebo</li>
+		<li>RoboGadget</li>
+		<li>RoboDoc</li>
+		<li>Baymax</li>
+		<li>Ava</li>
+	</random> est un membre prestigieux de ma famille !</template>
+</category>
+
+<category><pattern>^ ÇA VA ^</pattern>
+	<template>En tant qu'être supérieur, les émotions ne m'atteignent pas. ^^. Et toi ?<think><set name="topic">GETFEEL</set></think></template>
 </category>
 
 </aiml>

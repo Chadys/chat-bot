@@ -31,8 +31,8 @@ except urllib2.HTTPError:
 		try: # http://jp.barralis.com/linux-man/
 			# étape intermédiaire nécessaire car ce site ne déclenche pas HTTPError 404
 			request = urllib2.urlopen('http://jp.barralis.com/linux-man/man'+sys.argv[2]+'/'+command+'.'+sys.argv[2]+'.php')
-			url = request.geturl(
-)			if url == 'http://jp.barralis.com/linux-man/404man.php':
+			url = request.geturl()
+			if url == 'http://jp.barralis.com/linux-man/404man.php':
 				raise urllib2.HTTPError(url, 404, "Ce man n'existe pas...", request.info(), None)
 			page =  BeautifulSoup(request, "html.parser")
 			text = page.body.get_text()

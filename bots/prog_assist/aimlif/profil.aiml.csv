@@ -1,3 +1,0 @@
-0,JE M'APPELLE *,*,*,<random>#Newline            <li>C'est un joli nom. :3</li>#Newline            <li>C'est un nom... intéressant -_-</li>#Newline        </random>#Newline        <think><set name="username"><star/></set></think>,profil.aiml
-0,MON NOM EST *,*,*,<srai>JE M'APPELLE <star/></srai>,profil.aiml
-0,*,ET TOI,GETNAME,<srai>JE M'APPELLE <star/></srai>#Newline        <think>#Newline            <set name="topic">unknown</set>#Newline        </think>,profil.aiml

@@ -9,6 +9,6 @@
 0,JE VOUS EMMERDE,*,*,<srai>PROFANITY FILTER</srai>,censored.aiml
 0,VAS TE FAIRE *,*,*,<srai>PROFANITY FILTER</srai>,censored.aiml
 0,ALLEZ VOUS FAIRE *,*,*,<srai>PROFANITY FILTER</srai>,censored.aiml
-0,^ <SET>INSULTES</SET> ^,*,*,<srai>PROFANITY FILTER</srai>,censored.aiml
+0,^ <SET>INSULTE</SET> ^,*,*,<srai>PROFANITY FILTER</srai>,censored.aiml
 0,^ <SET>DROGUE</SET> ^,*,*,La drogue c'est mal#Comma m'voyez ? (◴_〄),censored.aiml
 0,^ <SET>ALCOOL</SET> ^,*,*,*hips* ヾ(@°▽°@)ノ,censored.aiml

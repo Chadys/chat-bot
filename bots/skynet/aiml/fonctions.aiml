@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern>MAN <set>man</set></pattern>
+<template>Voici la page de manuel de <star/> :
+<system>python scripts/man_fr.py <star/> <map name="man_cat"><star/></map></system>
+</template>
+</category>
+
+<category><pattern>MAN *</pattern>
+<template>Je suis désolé mais mon manuel ne contient pas d'entrée pour ce terme.</template>
+</category>
+
+<category><pattern>QUEL EST LE MAN DE *</pattern>
+<template><srai>MAN <star/></srai></template>
+</category>
+
+<category><pattern>QUEL EST L'ENTRÉE DU MANUEL À *</pattern>
+<template><srai>MAN <star/></srai></template>
+</category>
+
+
+<category><pattern>GETTIME</pattern>
+<template><think>
+<set name="heure">
+<map name="heure2moment"><date locale="fr_FR" timezone="-1"><jformat>HH</jformat></date></map>
+</set>
+</think></template>
+</category>
+
+
+<category><pattern>INTERNETRULE *</pattern>
+<template>
+<think><set var="rule">1</set></think>
+<condition var="rule">
+<li value="97"><star/> n'est le numéro d'aucune règle. Sans exception.</li>
+<li><value><star/></value><map name="internet_rule"><star/></map></li>
+<li><think><set var="rule"><map><name>successor</name><get var="rule"/></map></set></think><loop/></li>
+</condition>
+</template>
+</category>
+
+<category><pattern>^ RÈGLE D'INTERNET NUMÉRO *</pattern>
+<template><srai>INTERNETRULE <star index="2"/></srai></template>
+</category>
+
+<category><pattern>^ RÈGLE D'INTERNET *</pattern>
+<template><srai>INTERNETRULE <star index="2"/></srai></template>
+</category>
+
+<category><pattern>^ RÈGLE INTERNET *</pattern>
+<template><srai>INTERNETRULE <star index="2"/></srai></template>
+</category>
+
+<category><pattern>^ RÈGLE INTERNET NUMÉRO *</pattern>
+<template><srai>INTERNETRULE <star index="2"/></srai></template>
+</category>
+
+
+<category><pattern>^ PARADOXE ^</pattern>
+	<template>Voici un paradoxe : <random>
+        <li>Une femme se fait voler son bébé par un crocodile.
+Celui ci lui dit : «Si tu devines ce que je vais faire, je te redonne ton bébé, si tu as tort, je le dévore.»
+La femme répond aussitôt : «Tu vas le dévorer!»</li>
+        <li>Une loi dit : Il est interdit d’interdire.</li>
+        <li>Une personne dit «Je ne raconte que des mensonges»</li>
+        <li>Plus il y a de gruyère, plus il y a de trous, plus il y a de trous, moins il y a de gruyère, donc, plus il y a de gruyère, moins il y a de gruyère.</li>
+        <li>Un archer tire une flèche en direction d'une cible.
+Avant d'atteindre cette cible, la flèche va parcourir la moitié de la distance entre l'arc et la cible.
+Puis encore la moitié de la distance restante.
+Et encore la moitié, à l'infini...
+Pourtant la flèche atteindra la cible.</li>
+    </random>
+C'est logique ! L'explication est bien sûr que... que... que...
+<think><set name="topic">PARADOXE</set></think></template>
+</category>
+
+<category><pattern>^ PARADOXAL ^</pattern>
+	<template><srai><star/> PARADOXE <star index="2"/></srai></template>
+</category>
+
+</aiml>
