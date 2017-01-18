@@ -6,19 +6,16 @@
 </category>
 
 <category><pattern>^ RÉCURSIVE ^</pattern>
-	<template>Propriété de ce qui est récursif.</template>
-</category>
-
-<category><pattern>^ RÉCURSIVITÉ ^</pattern>
 	<template><srai><star/> RÉCURSIF <star index="2"/></srai></template>
 </category>
 
-<category><pattern>^ <set>langage</set> ^</pattern>
-<template><map name="langagedef"><star index="2"/></map></template>
+<category><pattern>^ RÉCURSIVITÉ ^</pattern>
+	<template>Propriété de ce qui est récursif.</template>
 </category>
 
-<category><pattern>^ <set>forgottenlangage</set> ^</pattern>
-<template>Je m'excuse mais ce langage est désué. Intéressez-vous à un autre. Vraiment.</template>
+<category><pattern>^ <set>langage</set></pattern>
+<template>Voilà ce que je sais sur le langage de programmation <star index="2"/> :
+<system>python scripts/wiki_langage_fr.py <star index="2"/></system></template>
 </category>
 
 </aiml>

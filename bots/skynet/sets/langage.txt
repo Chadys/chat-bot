@@ -79,6 +79,7 @@ C
 C--
 C++
 C#
+C sharp
 C/AL
 Caché ObjectScript
 Cameleon

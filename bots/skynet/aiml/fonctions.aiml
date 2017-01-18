@@ -79,4 +79,9 @@ C'est logique ! L'explication est bien sûr que... que... que...
 	<template><srai><star/> PARADOXE <star index="2"/></srai></template>
 </category>
 
+<category><pattern>CULTURE</pattern>
+<template>
+<system>python scripts/wiki_random_fr.py</system></template>
+</category>
+
 </aiml>
