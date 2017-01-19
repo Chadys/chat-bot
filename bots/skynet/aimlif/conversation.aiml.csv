@@ -35,3 +35,4 @@
 0,RÉPÉTEZ ^,*,*,<srai>RÉPÉTER</srai>,conversation.aiml
 0,^ S'IL TE PLAÎT,*,*,Merci de ta politesse.#Newline<sr/>,conversation.aiml
 0,C'EST *,*,*,Si tu le dis#Comma alors c'est <star/>.,conversation.aiml
+0,^ PEUT-ÊTRE ^,*,*,Je ne connais pas l'incertitude#Comma c'est 0 ou 1.,conversation.aiml

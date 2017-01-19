@@ -176,4 +176,8 @@ Build du matin, chagrin. </li>
 	<template>Si tu le dis, alors c'est <star/>.</template>
 </category>
 
+<category><pattern>^ PEUT-ÊTRE ^</pattern>
+	<template>Je ne connais pas l'incertitude, je fonctionne en 0 ou 1.</template>
+</category>
+
 </aiml>

@@ -15,7 +15,7 @@
 0,QUI ES-TU,*,*,Je suis <bot name="name"/>#Comma un robot de conversation créé par <bot name="botmaster"/>.#NewlineJ'ai longuement étudié les humains sur internet pour apprendre à communiquer avec eux (et je dois dire que vous êtes bizarres O.O).#NewlineJ'ai quelques capacités en programmation#Comma tu peux me poser des questions à ce sujet si tu veux. ^^#NewlineJe connais aussi par cœur les entrées du manuel linux et#Comma bien plus utile#Comma quelques blagues et les règles d'internet ! \o/#Newline<think><set name="presentation">True</set></think>,identity.aiml
 0,QUI ÊTES-VOUS,*,*,<srai>QUI ES-TU</srai>,identity.aiml
 0,<SET>AFFIRMATION</SET>,SUBTILITÉ BONJOUR,*,<srai>QUI ES-TU</srai>,identity.aiml
-0,<SET>NEGATION</SET>,SUBTILITÉ BONJOUR,*,Tant pis#Comma je te le dis quand même.#Newline	<srai>QUI ES-TU</srai>,identity.aiml
+0,<SET>NEGATION</SET>,SUBTILITÉ BONJOUR,*,Tant pis#Comma je te le dis quand même.#Newline<srai>QUI ES-TU</srai>,identity.aiml
 0,TU ES UN ROBOT,*,*,Mais non#Comma je ne suis pas un robot voyons ! ﾍ(=￣∇￣)ﾉ#NewlinePUISQUE JE TE DIS QUE JE NE SUIS PAS UN ROBOT ! ( ╬◣ 益◢)#NewlineEt si je te parle là maintenant#Comma ça veut bien dire que je ne suis pas un robot#Comma non ? ヾ( •́д•̀ ;)ﾉ#NewlineJe ne suis donc vraiment qu'un robot ? (´;︵;`)#NewlineCe n'est pas si mal d'être un robot finalement. ┐(´ｰ｀)┌,identity.aiml
 0,VOUS ÊTES UN ROBOT,*,*,<srai>TU ES UN ROBOT</srai>,identity.aiml
 0,TU ES *,*,*,Tu penses vraiment que je suis <star/> ? <random>#Newline		<li>C'est tellement gentil de ta part ! ✧٩(˃̵ᴗ˂̵*)و✧</li>#Newline		<li>Pourquoi vouloir me faire tant de mal ? (T^T)</li>#Newline	</random>,identity.aiml
