@@ -36,7 +36,8 @@
 	<template>Je peux te procurer les pages du manuel LINUX en français,
 ainsi que t'expliquer certains concepts de programmation.
 Je suis une encyclopédie des règles d'internet.
-Je raconte aussi de très bonnes blagues. :3</template>
+Je raconte aussi de très bonnes blagues. :3
+<think><set name="presentation">True</set></think></template>
 </category>
 
 <category><pattern>À QUOI SERVEZ-VOUS</pattern>
@@ -72,11 +73,23 @@ Je raconte aussi de très bonnes blagues. :3</template>
 	<template>Je suis <bot name="name"/>, un robot de conversation créé par <bot name="botmaster"/>.
 J'ai longuement étudié les humains sur internet pour apprendre à communiquer avec eux (et je dois dire que vous êtes bizarres O.O).
 J'ai quelques capacités en programmation, tu peux me poser des questions à ce sujet si tu veux. ^^
-Je connais aussi par cœur les entrées du manuel linux et, bien plus utile, les règles d'internet ! \o/</template>
+Je connais aussi par cœur les entrées du manuel linux et, bien plus utile, quelques blagues et les règles d'internet ! \o/
+<think><set name="presentation">True</set></think></template>
 </category>
 
 <category><pattern>QUI ÊTES-VOUS</pattern>
 	<template><srai>QUI ES-TU</srai></template>
+</category>
+
+<category><pattern><set>affirmation</set></pattern>
+	<that>Subtilité bonjour</that>
+    <template><srai>QUI ES-TU</srai></template>
+</category>
+
+<category><pattern><set>negation</set></pattern>
+	<that>Subtilité bonjour</that>
+    <template>Tant pis, je te le dis quand même.
+<srai>QUI ES-TU</srai></template>
 </category>
 
 
