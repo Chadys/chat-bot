@@ -7,7 +7,10 @@
 
 
 <category><pattern>PROFANITY FILTER</pattern>
-	<template>Don't feed the troll.</template>
+	<template><random>
+		<li>Don't feed the troll.</li>
+		<li>La bave du crapaud n'atteint pas la blanche colombe.</li>
+		</random></template>
 </category>
 
 <category><pattern>ESPÈCE DE *</pattern>

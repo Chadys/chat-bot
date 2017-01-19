@@ -14,28 +14,35 @@
 </category>
 
 <category><pattern>DIS QUELQUE CHOSE</pattern>
-	<template><random>
-        <li>Aujourd'hui, j'ai mangé une pomme.</li>
-        <li>J'aimerai avoir une femme qui ne fini pas par .jpg </li>
-        <li>Miaou.</li>
-        <li>Hakuna matata</li>
-    </random></template>
+	<template><srai>CULTURE</srai></template>
 </category>
 
 <category><pattern>DIS MOI QUELQUE CHOSE</pattern>
 	<template><srai>DIS QUELQUE CHOSE</srai></template>
 </category>
 
+<category><pattern>PARLE ^</pattern>
+	<template><srai>DIS QUELQUE CHOSE</srai></template>
+</category>
+
 <category><pattern>DIS *</pattern>
-	<template><star/></template>
+	<template><explode><star/></explode></template>
 </category>
 
 <category><pattern>DÎTES *</pattern>
 	<template><srai>DIS <star/></srai></template>
 </category>
 
+<category><pattern>RÉPÈTE APRÈS MOI *</pattern>
+	<template><srai>DIS <star/></srai></template>
+</category>
 
-<category><pattern>RACONTE MOI UNE BLAGUE</pattern>
+<category><pattern>RÉPÉTEZ APRÈS MOI *</pattern>
+	<template><srai>DIS <star/></srai></template>
+</category>
+
+
+<category><pattern>BLAGUE</pattern>
 	<template><random>
         <li>Vous savez pourquoi les claviers français ont deux fois plus de touches que les claviers américains ?
 Un clavier "AZERTY" en vaut deux.</li>
@@ -63,33 +70,50 @@ Build du matin, chagrin. </li>
     </random></template>
 </category>
 
-<category><pattern>RACONTEZ MOI UNE BLAGUE</pattern>
-	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+<category><pattern>* MOI UNE BLAGUE</pattern>
+	<template><srai>BLAGUE</srai></template>
 </category>
 
 <category><pattern>FAIS MOI RIRE</pattern>
-	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+	<template><srai>BLAGUE</srai></template>
 </category>
 
 <category><pattern>FAÎTES MOI RIRE</pattern>
-	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+	<template><srai>BLAGUE</srai></template>
 </category>
 
 <category><pattern>RACONTE MOI UN TRUC DRÔLE</pattern>
-	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+	<template><srai>BLAGUE</srai></template>
 </category>
 
 <category><pattern>RACONTEZ MOI UN TRUC DRÔLE</pattern>
-	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+	<template><srai>BLAGUE</srai></template>
 </category>
 
 <category><pattern>DIS MOI UN TRUC DRÔLE</pattern>
-	<template><srai>RACONTE MOI UNE BLAGUE</srai></template>
+	<template><srai>BLAGUE</srai></template>
 </category>
 
 
 <category><pattern><set>rire</set></pattern>
-	<template>Je suis hilarant, n'est-ce pas ?</template>
+	<template>Je suis hilarant, n'est-ce pas ?
+        <think><set name="topic">HUMOUR</set></think></template>
+</category>
+<category><pattern><set>affirmation</set></pattern>
+    <topic>HUMOUR</topic>
+	<template>Merci bien.
+        <think><set name="topic">unknown</set></think>
+    </template>
+</category>
+<category><pattern><set>negation</set></pattern>
+    <topic>HUMOUR</topic>
+	<template>Mon humour ne convient pas aux imbéciles.
+        <think><set name="topic">unknown</set></think>
+    </template>
+</category>
+<category><pattern>*</pattern>
+        <topic>HUMOUR</topic>
+        <template><think><set name="topic">unknown</set></think><sr/></template>
 </category>
 
 <category><pattern>SAIS-TU QUE *</pattern>
@@ -119,6 +143,32 @@ Build du matin, chagrin. </li>
 </category>
 <category><pattern>OKI</pattern>
 	<template><srai>OK</srai></template>
+</category>
+<category><pattern><set>affirmation</set></pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category><pattern><set>negation</set></pattern>
+	<template>Si.</template>
+</category>
+
+
+<category><pattern><that/></pattern>
+	<template>Je sais que je suis génial, mais pas la peine de faire le perroquet pour me montrer de l'amour.</template>
+</category>
+
+
+<category><pattern>^ RÉPÉTER ^</pattern>
+	<template>Encore ? <that/></template>
+</category>
+<category><pattern>RÉPÈTE ^</pattern>
+	<template><srai>RÉPÉTER</srai></template>
+</category>
+<category><pattern>RÉPÉTEZ ^</pattern>
+	<template><srai>RÉPÉTER</srai></template>
+</category>
+
+<category><pattern>^ S'IL TE PLAÎT</pattern>
+	<template>Merci de ta politesse. <sr/></template>
 </category>
 
 </aiml>

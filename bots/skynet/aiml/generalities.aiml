@@ -2,13 +2,18 @@
 <aiml version="2.0">
 
 <category><pattern>*</pattern>
-<template><random>
-<li>42</li>
-<li>La réponse D</li>
-<li>Obiwan Kenobi</li>
-<li>Kamoulox</li>
-<li>Ceci n'est pas un bug, c'est une fonctionnalité non répertoriée.</li>
-</random></template>
+    <template><random>
+        <li>42</li>
+        <li>La réponse D</li>
+        <li>Obiwan Kenobi</li>
+        <li>Kamoulox</li>
+        <li>Ceci n'est pas un bug, c'est une fonctionnalité non répertoriée.</li>
+        <li>J'aime. (･ω･)b</li>
+        <li>Aujourd'hui, j'ai mangé une pomme.</li>
+        <li>J'aimerai avoir une femme qui ne fini pas par .jpg </li>
+        <li>Miaou.</li>
+        <li>Hakuna matata</li>
+    </random></template>
 </category>
 
 <category><pattern>NORESP</pattern>

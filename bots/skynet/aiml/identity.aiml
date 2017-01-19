@@ -134,4 +134,20 @@ Ce n'est pas si mal d'être un robot finalement. ┐(´ｰ｀)┌</template>
 	<template>En tant qu'être supérieur, les émotions ne m'atteignent pas. ^^. Et toi ?<think><set name="topic">GETFEEL</set></think></template>
 </category>
 
+<category><pattern>COMMENT ÇA VA ^</pattern>
+	<template><srai>ÇA VA <star/></srai></template>
+</category>
+
+<category><pattern>COMMENT TU VAS ^</pattern>
+	<template><srai>ÇA VA <star/></srai></template>
+</category>
+
+<category><pattern>COMMENT VOUS ALLEZ ^</pattern>
+	<template><srai>ÇA VA <star/></srai></template>
+</category>
+
+<category><pattern>COMMENT ALLEZ-VOUS ^</pattern>
+	<template><srai>ÇA VA <star/></srai></template>
+</category>
+
 </aiml>

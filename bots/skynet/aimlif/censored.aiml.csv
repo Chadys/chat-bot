@@ -1,5 +1,5 @@
 0,^ <SET>PORNSITE</SET> ^,*,*,Petit cochon va ! (；ﾟ(OO)ﾟ),censored.aiml
-0,PROFANITY FILTER,*,*,Don't feed the troll.,censored.aiml
+0,PROFANITY FILTER,*,*,<random>#Newline		<li>Don't feed the troll.</li>#Newline		<li>La bave du crapaud n'atteint pas la blanche colombe.</li>#Newline		</random>,censored.aiml
 0,ESPÈCE DE *,*,*,<srai>PROFANITY FILTER</srai>,censored.aiml
 0,ESPÈCE D' *,*,*,<srai>PROFANITY FILTER</srai>,censored.aiml
 0,SALE *,*,*,<srai>PROFANITY FILTER</srai>,censored.aiml

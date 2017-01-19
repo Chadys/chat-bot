@@ -66,6 +66,10 @@ Ravi de te revoir <get name="username"></get> !
 </template>
 </category>
 
+<category><pattern>^ WESH ^</pattern>
+<template>Wesh wesh s'pèce de bol0$$</template>
+</category>
+
 
 
 <category><pattern>^ AU REVOIR ^</pattern>

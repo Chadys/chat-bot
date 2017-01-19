@@ -1,17 +1,23 @@
 0,J'AIME *,*,*,<random>#Newline        <li><sentence><star/> c'est tellement mainstream...</sentence></li>#Newline        <li>J'aimais <star/> avant que ce ne soit connu !</li>#Newline        <li>Tes goûts c'est de la merde.</li>#Newline    </random>,conversation.aiml
 0,JE T'AIME,*,*,Moi non.,conversation.aiml
-0,DIS QUELQUE CHOSE,*,*,<random>#Newline        <li>Aujourd'hui#Comma j'ai mangé une pomme.</li>#Newline        <li>J'aimerai avoir une femme qui ne fini pas par .jpg </li>#Newline        <li>Miaou.</li>#Newline        <li>Hakuna matata</li>#Newline    </random>,conversation.aiml
+0,DIS QUELQUE CHOSE,*,*,<srai>CULTURE</srai>,conversation.aiml
 0,DIS MOI QUELQUE CHOSE,*,*,<srai>DIS QUELQUE CHOSE</srai>,conversation.aiml
-0,DIS *,*,*,<star/>,conversation.aiml
+0,PARLE ^,*,*,<srai>DIS QUELQUE CHOSE</srai>,conversation.aiml
+0,DIS *,*,*,<explode><star/></explode>,conversation.aiml
 0,DÎTES *,*,*,<srai>DIS <star/></srai>,conversation.aiml
-0,RACONTE MOI UNE BLAGUE,*,*,<random>#Newline        <li>Vous savez pourquoi les claviers français ont deux fois plus de touches que les claviers américains ?#NewlineUn clavier "AZERTY" en vaut deux.</li>#Newline        <li>Il y a 10 type de personnes: ceux qui savent compter en binaire#Comma et les autres.</li>#Newline        <li>Les programmes sont comme le sexe : c'est mieux quand c'est gratuit.</li>#Newline        <li>Si Microsoft inventait un truc qui plante pas#Comma ce serait un clou.</li>#Newline        <li>Un chimiste#Comma un physicien#Comma un informaticien et un mathématicien sont dans un bus pour aller à un congrès. Il y a des embouteillages et le bus n'avance pas.#NewlinePour tuer le temps#Comma l'un deux propose un jeu scientifique : vérifier l'assertion "Tous les nombres impairs sont premiers".#Newline#Newline- Le chimiste commence : 3 c'est bon#Comma 5 c'est bon#Comma 7 c'est bon. On peut s'arrêter là#Comma c'est bon.#Newline- Le physicien comence à son tour : 3 c'est bon#Comma 5 c'est bon#Comma 7 c'est bon#Comma 9 c'est pas bon#Comma 11 c'est bon#Comma 13 c'est bon. Même si 9 ne marche pas#Comma en première approximation#Comma on peut dire que c'est bon.#Newline- Le mathématicien : 3 c'est bon#Comma 5 c'est bon#Comma 7 c'est bon#Comma 9 c'est pas bon. Je suis désolé#Comma mais ca ne va pas.#Newline- L'informaticien commence alors : 3 c'est bon#Comma 5 c'est bon#Comma 7 c'est bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon...</li>#Newline        <li>Exp et ln vont au restaurant#Comma qui paye ?#Newlineexp#Comma parce que logarithme népérien.</li>#Newline        <li>Combien faut il de programmeur pour changer une ampoule ?#NewlineAucun#Comma c'est un problème de hardware...</li>#Newline        <li>Un client téléphone au service technique de Microsoft :#Newline- J'ai un PC avec Windows 95.#Newline- Oui ?#Newline- Il ne marche pas.#Newline- Oui#Comma vous me l'avez déjà dit.</li>#Newline        <li>Commit du soir#Comma espoir.#NewlineBuild du matin#Comma chagrin. </li>#Newline    </random>,conversation.aiml
-0,RACONTEZ MOI UNE BLAGUE,*,*,<srai>RACONTE MOI UNE BLAGUE</srai>,conversation.aiml
-0,FAIS MOI RIRE,*,*,<srai>RACONTE MOI UNE BLAGUE</srai>,conversation.aiml
-0,FAÎTES MOI RIRE,*,*,<srai>RACONTE MOI UNE BLAGUE</srai>,conversation.aiml
-0,RACONTE MOI UN TRUC DRÔLE,*,*,<srai>RACONTE MOI UNE BLAGUE</srai>,conversation.aiml
-0,RACONTEZ MOI UN TRUC DRÔLE,*,*,<srai>RACONTE MOI UNE BLAGUE</srai>,conversation.aiml
-0,DIS MOI UN TRUC DRÔLE,*,*,<srai>RACONTE MOI UNE BLAGUE</srai>,conversation.aiml
-0,<SET>RIRE</SET>,*,*,Je suis hilarant#Comma n'est-ce pas ?,conversation.aiml
+0,RÉPÈTE APRÈS MOI *,*,*,<srai>DIS <star/></srai>,conversation.aiml
+0,RÉPÉTEZ APRÈS MOI *,*,*,<srai>DIS <star/></srai>,conversation.aiml
+0,BLAGUE,*,*,<random>#Newline        <li>Vous savez pourquoi les claviers français ont deux fois plus de touches que les claviers américains ?#NewlineUn clavier "AZERTY" en vaut deux.</li>#Newline        <li>Il y a 10 type de personnes: ceux qui savent compter en binaire#Comma et les autres.</li>#Newline        <li>Les programmes sont comme le sexe : c'est mieux quand c'est gratuit.</li>#Newline        <li>Si Microsoft inventait un truc qui plante pas#Comma ce serait un clou.</li>#Newline        <li>Un chimiste#Comma un physicien#Comma un informaticien et un mathématicien sont dans un bus pour aller à un congrès. Il y a des embouteillages et le bus n'avance pas.#NewlinePour tuer le temps#Comma l'un deux propose un jeu scientifique : vérifier l'assertion "Tous les nombres impairs sont premiers".#Newline#Newline- Le chimiste commence : 3 c'est bon#Comma 5 c'est bon#Comma 7 c'est bon. On peut s'arrêter là#Comma c'est bon.#Newline- Le physicien comence à son tour : 3 c'est bon#Comma 5 c'est bon#Comma 7 c'est bon#Comma 9 c'est pas bon#Comma 11 c'est bon#Comma 13 c'est bon. Même si 9 ne marche pas#Comma en première approximation#Comma on peut dire que c'est bon.#Newline- Le mathématicien : 3 c'est bon#Comma 5 c'est bon#Comma 7 c'est bon#Comma 9 c'est pas bon. Je suis désolé#Comma mais ca ne va pas.#Newline- L'informaticien commence alors : 3 c'est bon#Comma 5 c'est bon#Comma 7 c'est bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon#Comma 9 c'est pas bon...</li>#Newline        <li>Exp et ln vont au restaurant#Comma qui paye ?#Newlineexp#Comma parce que logarithme népérien.</li>#Newline        <li>Combien faut il de programmeur pour changer une ampoule ?#NewlineAucun#Comma c'est un problème de hardware...</li>#Newline        <li>Un client téléphone au service technique de Microsoft :#Newline- J'ai un PC avec Windows 95.#Newline- Oui ?#Newline- Il ne marche pas.#Newline- Oui#Comma vous me l'avez déjà dit.</li>#Newline        <li>Commit du soir#Comma espoir.#NewlineBuild du matin#Comma chagrin. </li>#Newline    </random>,conversation.aiml
+0,* MOI UNE BLAGUE,*,*,<srai>BLAGUE</srai>,conversation.aiml
+0,FAIS MOI RIRE,*,*,<srai>BLAGUE</srai>,conversation.aiml
+0,FAÎTES MOI RIRE,*,*,<srai>BLAGUE</srai>,conversation.aiml
+0,RACONTE MOI UN TRUC DRÔLE,*,*,<srai>BLAGUE</srai>,conversation.aiml
+0,RACONTEZ MOI UN TRUC DRÔLE,*,*,<srai>BLAGUE</srai>,conversation.aiml
+0,DIS MOI UN TRUC DRÔLE,*,*,<srai>BLAGUE</srai>,conversation.aiml
+0,<SET>RIRE</SET>,*,*,Je suis hilarant#Comma n'est-ce pas ?#Newline        <think><set name="topic">HUMOUR</set></think>,conversation.aiml
+0,<SET>AFFIRMATION</SET>,*,HUMOUR,Merci bien.#Newline        <think><set name="topic">unknown</set></think>,conversation.aiml
+0,<SET>NEGATION</SET>,*,HUMOUR,Mon humour ne convient pas aux imbéciles.#Newline        <think><set name="topic">unknown</set></think>,conversation.aiml
+0,*,*,HUMOUR,<think><set name="topic">unknown</set></think><sr/>,conversation.aiml
 0,SAIS-TU QUE *,*,*,Bien sûr que je sais tout#Comma tu es inintéressant.,conversation.aiml
 0,TU SAIS QUE *,*,*,<srai>SAIS-TU QUE <star/></srai>,conversation.aiml
 0,SAVIEZ-VOUS QUE *,*,*,<srai>SAIS-TU QUE <star/></srai>,conversation.aiml
@@ -21,3 +27,10 @@
 0,D'AC,*,*,<srai>OK</srai>,conversation.aiml
 0,DAC,*,*,<srai>OK</srai>,conversation.aiml
 0,OKI,*,*,<srai>OK</srai>,conversation.aiml
+0,<SET>AFFIRMATION</SET>,*,*,<srai>OK</srai>,conversation.aiml
+0,<SET>NEGATION</SET>,*,*,Si.,conversation.aiml
+0,<THAT/>,*,*,Je sais que je suis génial#Comma mais pas la peine de faire le perroquet pour me montrer de l'amour.,conversation.aiml
+0,^ RÉPÉTER ^,*,*,Encore ? <that/>,conversation.aiml
+0,RÉPÈTE ^,*,*,<srai>RÉPÉTER</srai>,conversation.aiml
+0,RÉPÉTEZ ^,*,*,<srai>RÉPÉTER</srai>,conversation.aiml
+0,^ S'IL TE PLAÎT,*,*,Merci de ta politesse. <sr/>,conversation.aiml

@@ -63,7 +63,23 @@
 
 <category><pattern>JE SUIS * </pattern>
 	<template>Être <star/> est-il si enviable ?
-        <think><set name="usercaract"><star/></set></think></template>
+        <think><set name="usercaract"><star/></set><set name="topic">ENVIABLE</set></think></template>
+</category>
+<category><pattern><set>affirmation</set></pattern>
+    <topic>ENVIABLE</topic>
+	<template>Bon eh bien tant mieux pour toi.
+        <think><set name="topic">unknown</set></think>
+    </template>
+</category>
+<category><pattern><set>negation</set></pattern>
+    <topic>ENVIABLE</topic>
+	<template>Les français se plaignent tout le temps.
+        <think><set name="topic">unknown</set></think>
+    </template>
+</category>
+<category><pattern>*</pattern>
+    <topic>ENVIABLE</topic>
+	<template><think><set name="topic">unknown</set></think><sr/></template>
 </category>
 
 <category><pattern>QUE SUIS-JE</pattern>

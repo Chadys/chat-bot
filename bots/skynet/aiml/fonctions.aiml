@@ -11,6 +11,10 @@
 <template>Je suis désolé mais mon manuel ne contient pas d'entrée pour ce terme.</template>
 </category>
 
+<category><pattern><set>man</set></pattern>
+<template><srai>MAN <star/></srai></template>
+</category>
+
 <category><pattern>QUEL EST LE MAN DE *</pattern>
 <template><srai>MAN <star/></srai></template>
 </category>
@@ -54,6 +58,23 @@
 
 <category><pattern>^ RÈGLE INTERNET NUMÉRO *</pattern>
 <template><srai>INTERNETRULE <star index="2"/></srai></template>
+</category>
+
+<category><pattern>^ RÈGLE INTERNET</pattern>
+<template>Il faut me dire quelque chose du genre "règle d'internet numéro ..." pour que je puisse t'en citer une.
+Il y en a bien trop.</template>
+</category>
+
+<category><pattern>^ RÈGLE D'INTERNET</pattern>
+<template><srai><star/> ^ RÈGLE INTERNET</srai></template>
+</category>
+
+<category><pattern>^ RÈGLES INTERNET</pattern>
+<template><srai><star/> ^ RÈGLE INTERNET</srai></template>
+</category>
+
+<category><pattern>^ RÈGLES D'INTERNET</pattern>
+<template><srai><star/> ^ RÈGLE INTERNET</srai></template>
 </category>
 
 
