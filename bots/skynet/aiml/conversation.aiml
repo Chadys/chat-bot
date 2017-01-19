@@ -42,7 +42,7 @@
 </category>
 
 
-<category><pattern>BLAGUE</pattern>
+<category><pattern>^ BLAGUE ^</pattern>
 	<template><random>
         <li>Vous savez pourquoi les claviers français ont deux fois plus de touches que les claviers américains ?
 Un clavier "AZERTY" en vaut deux.</li>
@@ -167,9 +167,13 @@ Build du matin, chagrin. </li>
 	<template><srai>RÉPÉTER</srai></template>
 </category>
 
-<category><pattern>^ S'IL TE PLAÎT</pattern>
+<category><pattern>^ S'IL TE PLAÎT ^</pattern>
 <template>Merci de ta politesse.
-<sr/></template>
+<srai><star/> <star index="2"/></srai></template>
+</category>
+
+<category><pattern>^ STP ^</pattern>
+<template><srai><star/> S'IL TE PLAÎT <star index="2"/></srai></template>
 </category>
 
 <category><pattern>C'EST *</pattern>
