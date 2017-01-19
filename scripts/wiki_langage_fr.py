@@ -1,9 +1,6 @@
 # coding: utf-8
 from __future__ import unicode_literals
-import os, sys, wikipedia
-import requests
-# import ipdb
-# ipdb.set_trace()
+import os, sys, wikipedia, requests
 
 if len(sys.argv) < 2:
 		print "Error in file use, 'python langage_descr_fr.py [language_name]'"
@@ -60,3 +57,6 @@ except wikipedia.exceptions.DisambiguationError as e:
 
 except wikipedia.exceptions.PageError as e:
 	print not_found
+
+except requests.exceptions.ConnectionError:
+	print u"Je suis actuellement trop déprimé par l'absence d'une connexion à internet pour te répondre.".encode('utf-8')

@@ -16,7 +16,7 @@
 <category><pattern>QUE *</pattern>
 <template><srai>QUESTION</srai></template>
 </category>
-<category><pattern>QU'EST-CE QUE *</pattern>
+<category><pattern>QU'EST-CE *</pattern>
 <template><srai>QUESTION</srai></template>
 </category>
 

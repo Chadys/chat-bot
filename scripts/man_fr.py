@@ -65,4 +65,8 @@ except urllib2.HTTPError:
 			print u"Défaillance du système, je n'ai pas pu consulter le manuel".encode('utf-8')
 			quit()
 
+except urllib2.URLError:
+	print u"Je suis actuellement trop déprimé par l'absence d'une connexion à internet pour te répondre.".encode('utf-8')
+	quit()
+
 print (command+'('+sys.argv[2]+')\n\n'+text).encode('utf-8')

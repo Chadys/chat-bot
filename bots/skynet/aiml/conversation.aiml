@@ -168,7 +168,12 @@ Build du matin, chagrin. </li>
 </category>
 
 <category><pattern>^ S'IL TE PLAÎT</pattern>
-	<template>Merci de ta politesse. <sr/></template>
+<template>Merci de ta politesse.
+<sr/></template>
+</category>
+
+<category><pattern>C'EST *</pattern>
+	<template>Si tu le dis, alors c'est <star/>.</template>
 </category>
 
 </aiml>

@@ -2,7 +2,7 @@
 0,QUI SONT *,*,*,Qui sont ces serpents qui sifflent sur vos têtes ?,question.aiml
 0,QUESTION,*,*,Je t'en poses moi des questions ?!,question.aiml
 0,QUE *,*,*,<srai>QUESTION</srai>,question.aiml
-0,QU'EST-CE QUE *,*,*,<srai>QUESTION</srai>,question.aiml
+0,QU'EST-CE *,*,*,<srai>QUESTION</srai>,question.aiml
 0,QUI *,*,*,<srai>QUESTION</srai>,question.aiml
 0,À QUI *,*,*,<srai>QUI <star/></srai>,question.aiml
 0,POUR QUI *,*,*,<srai>QUI <star/></srai>,question.aiml

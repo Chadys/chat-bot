@@ -1,6 +1,6 @@
 # coding: utf-8
 from __future__ import unicode_literals
-import wikipedia
+import wikipedia, requests
 
 wikipedia.set_lang("fr")
 while True:
@@ -12,3 +12,6 @@ while True:
 		pass
 	except wikipedia.exceptions.PageError:
 		pass
+	except requests.exceptions.ConnectionError:
+		print u"Je suis actuellement trop déprimé par l'absence d'une connexion à internet pour te répondre.".encode('utf-8')
+		break

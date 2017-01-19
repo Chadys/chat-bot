@@ -1,4 +1,4 @@
 0,^ RÉCURSIF ^,*,*,Se dit d'une règle ou d'un élément doués de récursivité.,programmation.aiml
 0,^ RÉCURSIVE ^,*,*,<srai><star/> RÉCURSIF <star index="2"/></srai>,programmation.aiml
 0,^ RÉCURSIVITÉ ^,*,*,Propriété de ce qui est récursif.,programmation.aiml
-0,^ <SET>LANGAGE</SET>,*,*,Voilà ce que je sais sur le langage de programmation <star index="2"/> :#Newline<system>python scripts/wiki_langage_fr.py <star index="2"/></system>,programmation.aiml
+0,# <SET>LANGAGE</SET>,*,*,Voilà ce que je sais sur le langage de programmation <star index="2"/> :#Newline<system>python scripts/wiki_langage_fr.py <star index="2"/></system>,programmation.aiml

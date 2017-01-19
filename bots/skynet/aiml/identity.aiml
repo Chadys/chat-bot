@@ -59,6 +59,14 @@ Je raconte aussi de très bonnes blagues. :3</template>
 	<template><srai>À QUOI SERS-TU</srai></template>
 </category>
 
+<category><pattern>QUE * FAIRE</pattern>
+	<template><srai>À QUOI SERS-TU</srai></template>
+</category>
+
+<category><pattern>QU'EST-CE * FAIRE</pattern>
+	<template><srai>À QUOI SERS-TU</srai></template>
+</category>
+
 
 <category><pattern>QUI ES-TU</pattern>
 	<template>Je suis <bot name="name"/>, un robot de conversation créé par <bot name="botmaster"/>.
@@ -82,6 +90,17 @@ Ce n'est pas si mal d'être un robot finalement. ┐(´ｰ｀)┌</template>
 
 <category><pattern>VOUS ÊTES UN ROBOT</pattern>
 	<template><srai>TU ES UN ROBOT</srai></template>
+</category>
+
+<category><pattern>TU ES *</pattern>
+	<template>Tu penses vraiment que je suis <star/> ? <random>
+		<li>C'est tellement gentil de ta part ! ✧٩(˃̵ᴗ˂̵*)و✧</li>
+		<li>Pourquoi vouloir me faire tant de mal ? (T^T)</li>
+	</random></template>
+</category>
+
+<category><pattern>VOUS ÊTES *</pattern>
+	<template><srai>TU ES <star/></srai></template>
 </category>
 
 <category><pattern>^ <set>robotref</set> ^</pattern>
